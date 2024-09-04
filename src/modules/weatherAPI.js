@@ -1,6 +1,6 @@
-export async function fetchWeather() {
+export async function fetchWeather(city, state) {
     let weatherData = "";
-    const request = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/sacramento, CA?unitGroup=metric&key=CRD82PN2C65PEXJPK8FKPAT49&contentType=json";
+    const request = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}, ${state}?unitGroup=metric&key=CRD82PN2C65PEXJPK8FKPAT49&contentType=json`;
     try {
         console.log('Fetching weather data...');
         const response = await fetch(request);

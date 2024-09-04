@@ -1,27 +1,31 @@
 a {
     text-decoration: none;
 }
+
 ul {
     list-style-type: none;
 }
+
 .navbar {
     display: flex;
     width: 100%;
     margin: auto;
     padding: auto;
-    /* gap: 10px; */
 }
+
 .navbar>ul {
     display: flex;
     justify-content: center;
     gap: 20px;
     width: 50%;
 }
+
 .navbar>form {
     margin: auto;
     padding: auto;
     width: 50%;
 }
+
 #search {
     margin-left: 100px;
 }
